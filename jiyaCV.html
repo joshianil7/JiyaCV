@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jiya's Resume</title>
+        <link  href="styleresume.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    
+        <script>
+            function changeBackgroundColor() {
+                var colors = ["#ff5733", "#33ff57", "#5733ff", "#ff33a1", "#a133ff", "#33ffaa"];
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                document.body.style.backgroundColor = randomColor;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="Resume">
+            <div class="leftside">
+                <div class="photo">
+                <img src="file:///C:/Users/thapa/OneDrive/Pictures/Camera%20Roll/DSC_0450.JPG" width="250">
+                </div>
+                <div class="Contact_info">
+                    <h2>Contact</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <span class="text text-name"> </span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text text-phone"> </span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <a href="https://mail.google.com/mail/u/1/#inbox" id="email-link">
+                                <span class="text text-email"> </span>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text text-location"> </span>
+                        </li>
+                    </ul>
+                </div>
+                
+               
+                <div class="Education_detail">
+                    <h2>Education</h2>
+                    <hr>
+                    <h3>UNG-Geomatics Engineering</h3>
+                    <h4>Kathmandu University</h4>
+                    <p>August,2019-Present</p>
+                    <h3>+2 Science Stream</h3>
+                    <h4>MOLIHSS/Lalipur</h4>
+                    <p>2009-2017</p>
+                    <h3>SEE</h3>
+                    <h4>Balkunj English Secondary School</h4>
+                    <p>2009-2017</p>
+                </div>
+            </div>  
+            <div class="rightside">
+                <div class="header_txt">
+                    <h1>Jiya Thapa<br></h1>
+                    
+                </div>
+                <div class="head_content">
+                    <p>
+                        I believe experiences are the key foundation for strengthening our
+                        personality and attitude. The more you push, the harder and sharper you will
+                        be. So I love taking experiences of different events and challenges that comeon my way.
+                    </p>
+                    <p>
+                        Similarly, I am an ambitious, hardworking, and dedicated individual seeking
+                        to express my communication skills, and my ideas on different platforms.
+                    </p> 
+                    <hr>  
+                </div>
+
+
+                <div class="body_content">
+                    <h2>Organizations </h2>
+                    <h3>ANSWER NEPAL <a href="https://www.facebook.com/AnswerAAA" target="blank"><img src ="file:///C:/Users/thapa/OneDrive/Pictures/Camera%20Roll/answer.jpg" width="25" height="25" ></a></h3>
+                    <p>Executive Member</p>
+                    <h3>G-17 University Consortium <a href="<a href="https://portal.g17global.org/profile#" target="blank"><img src ="file:///C:/Users/thapa/OneDrive/Pictures/Camera%20Roll/G17%20logo.jpg" width="25" height="25" ></a></h3> 
+                                  <p>SDG-5 Ambassador</p>
+                    
+                    <div class="Skills1">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>
+                                <span class="text">Creative Writing and Editing </span>
+                                <span class="percent">
+                                    <div style="width: 85%;"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text">Public Relation Handler </span>
+                                <span class="percent">
+                                    <div style="width: 65%;"></div>
+                            </li>
+                            <li>
+                                <span class="text">Basic HTML </span>
+                                <span class="percent">
+                                    <div style="width: 75%;"></div>
+                            </li>
+                            <li>
+                                <span class="text">Basic GIS </span>
+                                <span class="percent">
+                                    <div style="width: 55%;"></div>
+                            </li>
+                        </ul>
+                    </div>              
+                    
+                    <h2>Interests</h2>
+                    <p>Sketching</p>
+                    <p>Writing</p>
+                    <p>Volunteering</p>
+                </div>
+                
+
+    
+            </div>  
+        </div>
+        
+        
+        <div class="Resume">
+            <button onclick="changeBackgroundColor()">Change Background Color</button>
+        </div>
+
+
+        <script>
+            window.onload = function() {
+                var header = document.querySelector('h1');
+                header.style.color = 'green';
+                var personalInfo = {
+                    name: "Jiya Thapa",
+                    phone: "+977 9863801529",
+                    email: "thapajiya2018@gmail.com",
+                    location: "Lalitpur, Nepal"
+                };
+                document.querySelector('.text-name').textContent = personalInfo.name;
+                document.querySelector('.text-phone').textContent = personalInfo.phone;
+                document.querySelector('.text-email').textContent = personalInfo.email;
+                document.querySelector('.text-location').textContent = personalInfo.location;
+            };
+        </script>
+        
+    
+    </body>
+</html>
